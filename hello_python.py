@@ -9,7 +9,7 @@ def div(a,b):
 
 
 if __name__ == "__main__":
-    print('{} {}'.format('hello python', 'hi pycharm'))
+    print('hello python hi pycharm')
     x=10
     y=5
     res =add(x,y)

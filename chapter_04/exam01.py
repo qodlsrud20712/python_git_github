@@ -2,8 +2,14 @@ import random as rnd
 
 
 def bubble_sort(random_list):
+    tmp = 0
+    for i in range(len(random_list)):
+        for j in range(len(random_list)):
+            if random_list[i] > random_list[j]:
+                tmp=random_list[i]
+                random_list[i] = random_list[j]
+                random_list[j] = tmp
 
-    print(random_list)
     return random_list
 
 

@@ -9,9 +9,9 @@ def div(a,b):
 
 
 if __name__ == "__main__":
-    print('hello python hi pycharm')
+    print('{} {}'.format('hello python', 'hi pycharm'))
     x=10
     y=5
     res =add(x,y)
-    print("add({},{}) ={} \nmul({},{}) ={}".format(x,y,add(x,y),x,y,div(x,y)))
+    print("add({},{}) ={} \ndiv({},{}) ={}".format(x,y,add(x,y),x,y,div(x,y)))
     print("add({},{}) ={} \nmul({},{}) ={}".format(x,y,add(x,y),x,y,mul(x,y)))

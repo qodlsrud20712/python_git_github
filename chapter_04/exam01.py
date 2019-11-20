@@ -4,7 +4,7 @@ import random as rnd
 def bubble_sort(random_list):
     tmp = 0
     for i in range(len(random_list)):
-        for j in range(len(random_list)):
+        for j in range(len(random_list)-1):
             if random_list[i] > random_list[j]:
                 tmp=random_list[i]
                 random_list[i] = random_list[j]

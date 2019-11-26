@@ -29,11 +29,12 @@ def print_stu_list():
 
 def add_stu_list():
      global file
+     global share_list
      #global share_list
      with open(file, 'r')as f:
-        # line = f.readlines()
-        # if share_list < line:
-        #     share_list = line
+        line = f.readlines()
+        if share_list < line:
+            share_list = line
         print('학생정보를 입력하시오. 학번->이름->국어->영어->수학순으로')
         num, name, kor, eng, math = input().split()
         format_string = '{} '.format(int(kor) + int(eng) + int(math))
@@ -45,11 +46,11 @@ def add_stu_list():
 
 def fix_stu_list():
      global file
-     #global share_list
+     global share_list
      with open(file, 'r+')as f:
-        # line = f.readlines()
-        # if share_list < line:
-        #     share_list = line
+        line = f.readlines()
+        if share_list < line:
+            share_list = line
         list_len = len(share_list)
         stu_list = range(list_len)
         print('수정할 학생정보를 고르시오')
@@ -82,12 +83,11 @@ def fix_stu_list():
 
 def del_stu_list():
     global file
-    #global share_list
+    global share_list
     with open(file, 'r+')as f:
-        # line = f.readlines()
-        # if share_list < line:
-        #     share_list = line
-        #
+        line = f.readlines()
+        if share_list < line:
+            share_list = line
         list_len = len(share_list)
         stu_list = range(list_len)
         print('삭제 할 학생정보를 고르시오')
